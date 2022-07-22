@@ -1,0 +1,18 @@
+@EndUserText.label : 'Flight Reference Scenario: Managing Agencies'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table zsodogan_agency {
+  key client    : abap.clnt not null;
+  key agency_id : abap.numc(6) not null;
+  name          : abap.char(80);
+  street        : abap.char(80);
+  postal_code   : abap.char(10);
+  city          : abap.char(40);
+  country_code  : land1;
+  phone_number  : abap.char(30);
+  email_address : abap.string(256);
+  web_address   : abap.string(256);
+
+}

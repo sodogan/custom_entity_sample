@@ -1,0 +1,7 @@
+@EndUserText.label: 'Custom entity'
+define service zsd_travel_custom {
+  expose ZSODOGAN_I_TRAVEL_U as Travels;
+  expose ZSODOGAN_I_BOOKING as Bookings;
+  expose zsodogan_I_AGENCY as Agency;
+  expose I_Country as Country;
+}
